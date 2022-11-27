@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(33, 14, 66);
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.numCounter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.numCounter h1 {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.reset,
+.save {
+  margin: 20px;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  width: 30%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+.reset:active,
+.save:active {
+  transform: scale(1.08);
+  color: white;
+}
+
+.reset:active {
+  background-color: red;
+}
+.save:active {
+  background-color: green;
+}
+
+.counter {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.num {
+  padding: 60px 100px;
+  font-size: 50px;
+  font-weight: 900;
+  background-color: rgb(62, 26, 87);
+  border-radius: 20px;
+}
+
+.plus,
+.minus {
+  position: absolute;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.plus:active,
+.minus:active {
+  transform: scale(1.06);
+}
+
+.plus {
+  top: 50%;
+  left: 88%;
+  padding: 5px 17px;
+}
+
+.minus {
+  top: 86%;
+  left: 59%;
+  padding: 5px 20px;
+}
+
+.numSaved {
+  width: 600px;
+  text-align: center;
+}
+
+.numSaved h1 {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers div {
+  font-size: 30px;
+  margin: 8px 12px;
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(26, 14, 51);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  margin: 50px;
+  background-color: rgb(46, 27, 88);
+  padding: 20px;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.box {
+  display: flex;
+  margin: 25px;
+}
+
+input {
+  width: 30rem;
+  padding: 8px;
+  font-size: 20px;
+  outline: none;
+}
+
+.add,
+.ed {
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: rgb(32, 150, 16);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.ed {
+  display: none;
+}
+
+.add:active,
+.ed:active {
+  background-color: rgb(28, 183, 14);
+}
+
+.list {
+  background-color: rgb(88, 56, 155);
+  border-radius: 5px;
+  padding: 10px;
+  width: 33.6rem;
+  height: 28rem;
+  text-align: center;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note {
+  background-color: rgb(56, 29, 113);
+  border-radius: 2px;
+  padding: 10px;
+  width: 30rem;
+  margin: 8px;
+  display: flex;
+  cursor: pointer;
+}
+
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+hr {
+  position: absolute;
+  width: 20rem;
+  color: white;
+  outline: none;
+  background-color: white;
+  top: 54%;
+  display: none;
+}
+
+.edit,
+.remove {
+  font-size: 15px;
+  padding: 5px 7px;
+  margin: 2px;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit:active,
+.remove:active {
+  transform: scale(0.9);
+}
+
+.edit {
+  background-color: rgb(200, 152, 10);
+}
+
+.remove {
+  background-color: rgb(189, 27, 27);
+}

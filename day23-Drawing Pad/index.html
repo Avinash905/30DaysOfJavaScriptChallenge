@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing Pad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="head">Drawing Pad</h1>
+    <div class="container">
+      <div class="menu">
+        <ul class="shapes">
+          <h4>Shapes</h4>
+          <li id="rect">
+            <img src="./icons/rectangle.svg" alt="" />
+            Rectangle
+          </li>
+          <li id="circle"><img src="./icons/circle.svg" alt="" />Circle</li>
+          <li id="triangle">
+            <img src="./icons/triangle.svg" alt="" />Triangle
+          </li>
+          <div class="fill">
+            <input type="checkbox" name="fillcolor" id="fill-color" />
+            <label for="fill-color">Fill color</label>
+          </div>
+        </ul>
+        <ul class="options">
+          <h4>Options</h4>
+          <li id="brush" class="active">
+            <img src="./icons/brush.svg" alt="" />Brush
+          </li>
+          <li id="eraser"><img src="./icons/eraser.svg" alt="" />Eraser</li>
+          <input
+            type="range"
+            name="brushsize"
+            id="brush-size"
+            min="1"
+            max="30"
+          />
+        </ul>
+        <div class="clr">
+          <label for="color">Color</label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <button class="clear">Clear Drawing Pad</button>
+        <button class="save">Save as Image</button>
+      </div>
+      <canvas></canvas>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

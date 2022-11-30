@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(26, 14, 51);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin: 50px;
+}
+
+.inp-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+input {
+  text-align: center;
+  font-size: 30px;
+  padding: 8px;
+  width: 20vw;
+  margin: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.btns {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 3px;
+}
+
+button {
+  font-size: 18px;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(26, 14, 51);
+  cursor: pointer;
+}
+
+.equal {
+  background-color: blueviolet;
+}
+
+button:active {
+  background-color: green;
+}

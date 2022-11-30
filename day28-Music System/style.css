@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(46, 18, 18);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 50px;
+}
+
+.music-box {
+  background-color: rgb(91, 22, 22);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.title {
+  font-size: 25px;
+}
+.singer {
+  font-size: 20px;
+}
+
+img {
+  width: 17vw;
+  height: 17vw;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.btns {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns div {
+  padding: 14px 17px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pause {
+  display: none;
+}
+
+.btns div:active {
+  background-color: white;
+  color: black;
+}
